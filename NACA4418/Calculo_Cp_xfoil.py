@@ -120,9 +120,9 @@ for i in range(num_angulos):
             result = subprocess.run([str(xfoil_path)], stdin=input_file, cwd=xfoil_path.parent)
 
         if cp_filename.exists():
-            print(f"✅ Archivo generado: {cp_filename}")
+            print(f"Archivo generado: {cp_filename}")
         else:
-            print("❌ No se ha generado el archivo de Cp. Revisa entrada o convergencia.")
+            print("No se ha generado el archivo de Cp. Revisa entrada o convergencia.")
 
         if os.path.exists(cp_filename):
             # Leer y graficar Cp
